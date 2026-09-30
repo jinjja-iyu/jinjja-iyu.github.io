@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>개인정보처리방침 · 오나무</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, clause-numbered like a legal notice, quiet green accent from the channel mark */
+:root {
+  --bg: #f6f8f7;
+  --paper: #ffffff;
+  --fg: #1c2522;
+  --muted: #5b6863;
+  --line: #dde4e1;
+  --accent: #0f8a74;
+  --display: "Gowun Batang", "Noto Serif KR", serif;
+  --body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#101614; --paper:#161e1b; --fg:#e4ebe8; --muted:#9aa8a2; --line:#27322e; --accent:#3cc4a8; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg:#101614; --paper:#161e1b; --fg:#e4ebe8; --muted:#9aa8a2; --line:#27322e; --accent:#3cc4a8; color-scheme: dark; }
+body { margin:0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.75; padding-inline: 16px; padding-block: 40px 64px; }
+main { max-width: 680px; margin: 0 auto; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: clamp(24px, 5vw, 48px); }
+.eyebrow { font-size: 13px; letter-spacing: .06em; color: var(--accent); font-weight: 600; margin: 0; }
+h1 { font-family: var(--display); font-size: clamp(26px, 5vw, 34px); line-height: 1.3; margin: 6px 0 8px; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; font-variant-numeric: tabular-nums; }
+.lead { margin: 0 0 32px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+ol.clauses { list-style: none; counter-reset: c; padding: 0; margin: 0; display: grid; gap: 28px; }
+ol.clauses > li { counter-increment: c; }
+h2 { font-size: 17px; font-weight: 600; margin: 0 0 6px; text-wrap: balance; }
+ol.clauses h2::before { content: "제" counter(c) "조 "; color: var(--accent); }
+p { margin: 0 0 8px; }
+ul { margin: 4px 0 0; padding-left: 20px; }
+li li { margin-bottom: 4px; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; word-break: break-all; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.contact { user-select: all; font-weight: 600; }
+footer { max-width: 680px; margin: 20px auto 0; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow"><a href="./" style="text-decoration:none">← 오나무</a></p>
+  <h1>개인정보처리방침</h1>
+  <p class="meta">시행일 2026년 9월 30일</p>
+
+  <p class="lead">오나무 업로드 도구(이하 “오나무”)는 유튜브 채널 <a href="https://www.youtube.com/@5NaMu" rel="noopener">오나무(@5NaMu)</a> 운영자가 자기 채널에 쇼츠 영상을 자동으로 올리기 위해 만든 개인용 도구입니다. 운영자 본인의 구글 계정 한 개만 이 도구에 로그인하며, 다른 사람의 개인정보는 수집하지 않습니다.</p>
+
+  <ol class="clauses">
+    <li>
+      <h2>요청하는 Google 권한</h2>
+      <p>운영자 본인이 로그인할 때 아래 권한을 요청합니다.</p>
+      <ul>
+        <li><code>youtube.upload</code>, <code>youtube</code>: 운영자 채널에 영상을 올리고, 제목·설명·썸네일·재생목록을 설정합니다.</li>
+        <li><code>drive.file</code>: 운영자 구글 드라이브의 “오나무 쇼츠” 폴더에 완성 영상 사본을 저장합니다. 이 도구가 만든 파일에만 접근할 수 있습니다.</li>
+      </ul>
+    </li>
+    <li>
+      <h2>YouTube API 서비스 이용</h2>
+      <p>이 도구는 YouTube API 서비스를 사용해 운영자 채널에 영상을 올립니다. 이 도구를 사용하는 것은 <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube 서비스 약관</a>에 동의하는 것이며, 관련 정보 처리에는 <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>이 함께 적용됩니다.</p>
+    </li>
+    <li>
+      <h2>수집하지 않는 정보</h2>
+      <p>시청자, 구독자, 댓글 작성자 등 다른 사용자의 정보는 수집·저장·열람하지 않습니다. 운영자 계정의 메일, 연락처, 시청 기록 등 업로드와 관계없는 데이터도 읽지 않습니다.</p>
+    </li>
+    <li>
+      <h2>인증 정보의 보관</h2>
+      <p>로그인 후 발급되는 인증 토큰은 운영자의 GitHub 저장소 암호화 비밀값(Secrets)에만 보관되며, 영상 제작 작업이 실행될 때만 사용됩니다. 토큰은 공개되거나 다른 곳으로 전송되지 않습니다.</p>
+    </li>
+    <li>
+      <h2>제3자 제공</h2>
+      <p>Google API로 얻은 어떤 정보도 판매하거나 제3자에게 제공하지 않으며, 광고나 분석에 사용하지 않습니다. 이 도구의 Google 사용자 데이터 사용은 <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API 서비스 사용자 데이터 정책</a>과 제한적 사용(Limited Use) 요구 사항을 따릅니다.</p>
+    </li>
+    <li>
+      <h2>권한 철회</h2>
+      <p>언제든 <a href="https://myaccount.google.com/connections" rel="noopener">Google 계정의 연결된 앱</a> 페이지 또는 <a href="https://security.google.com/settings/security/permissions" rel="noopener">Google 보안 설정의 앱 권한</a> 페이지에서 오나무의 접근 권한을 삭제할 수 있습니다. 삭제하면 이 도구는 더 이상 채널이나 드라이브에 접근하지 못하며, 운영자는 GitHub에 보관된 토큰도 함께 삭제합니다. 이 도구는 인증 토큰 외에 Google API로 받은 데이터를 따로 저장하지 않습니다.</p>
+    </li>
+    <li>
+      <h2>문의</h2>
+      <p>이 방침에 대한 문의는 아래 이메일로 보내 주세요.</p>
+      <p class="contact">dbwntjr20010811@gmail.com</p>
+    </li>
+    <li>
+      <h2>변경</h2>
+      <p>방침이 바뀌면 이 페이지를 수정하고 시행일을 새로 적습니다.</p>
+    </li>
+  </ol>
+
+  <section lang="en" style="margin-top:36px;padding-top:28px;border-top:1px solid var(--line)">
+    <h2 style="margin-bottom:10px">English summary</h2>
+    <p>The 오나무 upload tool is a private, single-user tool that uploads short videos to the owner's own YouTube channel, <a href="https://www.youtube.com/@5NaMu" rel="noopener">오나무 (@5NaMu)</a>. Only the channel owner's Google account signs in.</p>
+    <ul>
+      <li><strong>Scopes:</strong> <code>youtube.upload</code> and <code>youtube</code> to upload videos to the owner's channel and set title, description, thumbnail and playlist; <code>drive.file</code> to save a copy of each finished video in a folder the tool creates in the owner's Google Drive.</li>
+      <li><strong>YouTube API Services:</strong> this tool uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>. The <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> also applies.</li>
+      <li><strong>Data:</strong> no data about viewers, subscribers, commenters or other users is collected, stored or shared. No Google user data is sold, shared with third parties, or used for advertising or analytics. Use of Google user data follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+      <li><strong>Storage:</strong> the OAuth refresh token is stored only as an encrypted GitHub Actions secret and used only while a video job runs. No other API data is stored.</li>
+      <li><strong>Revoking access:</strong> access can be revoked at any time at <a href="https://security.google.com/settings/security/permissions" rel="noopener">Google security settings</a>; the stored token is then deleted.</li>
+      <li><strong>Contact:</strong> dbwntjr20010811@gmail.com</li>
+    </ul>
+  </section>
+</main>
+<footer>이 페이지는 Google OAuth 동의 화면의 앱 “오나무”에 연결된 개인정보처리방침입니다. · <a href="./">홈</a></footer>
+</body>
+</html>
